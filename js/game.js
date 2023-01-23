@@ -8,16 +8,16 @@
 
 // scene import statements
 
-import SplashScene from "./splashScene.js"
-import TitleScene from "./titleScene.js"
-import MenuScene from "./menuScene.js"
-import GameScene from "./gameScene.js"
+import SplashScene from "./splashScene.js";
+import TitleScene from "./titleScene.js";
+import MenuScene from "./menuScene.js";
+import GameScene from "./gameScene.js";
 
 // crate the new scenes
-const splashScene = new SplashScene()
-const titleScene = new TitleScene()
-const menuScene = new MenuScene()
-const gameScene = new GameScene()
+const splashScene = new SplashScene();
+const titleScene = new TitleScene();
+const menuScene = new MenuScene();
+const gameScene = new GameScene();
 
 /**
  * start phaser game.
@@ -39,7 +39,7 @@ const config = {
     //we replaced it in the middle of the page
     autoCenter: Phaser.Scale.CENTER_BOTH,
   },
-}
+};
 
 const game = new Phaser.Game(config);
 console.log(game);
@@ -53,4 +53,4 @@ game.scene.add("gameScene", gameScene);
 
 // the start scene
 
-game.scene.start("splashScene")
+game.scene.start("splashScene");
