@@ -38,7 +38,8 @@ class MenuScene extends Phaser.Scene {
     console.log("Menu Scene");
     this.load.image(
       "menuSceneBackground",
-      "./assets/decimos-partida-perfecta-pac-man (3).jpg");
+      "./assets/decimos-partida-perfecta-pac-man (3).jpg"
+    );
     this.load.image("startButton", "./assets/Start-Button-Vector-PNG.png");
   }
 
