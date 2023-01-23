@@ -35,7 +35,10 @@ class SplashScene extends Phaser.Scene {
    */
   preload() {
     console.log("Splash Scene");
-    this.load.image("splashSceneBackground", "./assets/Screenshot 2023-01-10 13.53.33 (.png");
+    this.load.image(
+      "splashSceneBackground",
+      "./assets/Screenshot 2023-01-10 13.53.33 (.png"
+    );
     this.load.audio("pacman-beginning", "./assets/Pac-Man-Theme-Song.wav");
   }
 
