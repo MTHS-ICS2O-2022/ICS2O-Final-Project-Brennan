@@ -14,9 +14,9 @@ class SplashScene extends Phaser.Scene {
    * This mathod is the construtor.
    */
   constructor() {
-    super({ key: "splashScene" });
+    super({ key: "splashScene" })
 
-    this.SplashSceneBackgroundImage = null;
+    this.SplashSceneBackgroundImage = null
   }
 
   /**
@@ -26,7 +26,7 @@ class SplashScene extends Phaser.Scene {
    *  @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
   init(data) {
-    this.cameras.main.setBackgroundColor("ffffff");
+    this.cameras.main.setBackgroundColor("ffffff")
   }
 
   /**
@@ -34,12 +34,9 @@ class SplashScene extends Phaser.Scene {
    * use it to load assets.
    */
   preload() {
-    console.log("Splash Scene");
-    this.load.image(
-      "splashSceneBackground",
-      "./assets/Screenshot 2023-01-10 13.53.33.png (4)"
-    );
-    this.load.audio("pacman-beginning", "./assets/Pac-Man-Theme-Song.wav");
+    console.log("Splash Scene")
+    this.load.image("splashSceneBackground", "./assets/Screenshot 2023-01-10 13.53.33 (4).png")
+    this.load.audio("pacman-beginning", "./assets/Pac-Man-Theme-Song.wav")
   }
 
   /**
@@ -52,10 +49,10 @@ class SplashScene extends Phaser.Scene {
       0,
       0,
       "splashSceneBackground"
-    );
-    this.SplashSceneBackgroundImage.x = 1920 / 2;
-    this.SplashSceneBackgroundImage.y = 1580 / 2;
-    this.sound.play("pacman-beginning");
+    )
+    this.SplashSceneBackgroundImage.x = 1920 / 2
+    this.SplashSceneBackgroundImage.y = 1580 / 2
+    this.sound.play("pacman-beginning")
   }
 
   /**
@@ -66,10 +63,9 @@ class SplashScene extends Phaser.Scene {
    */
   update(time, delta) {
     if (time > 3000) {
-      this.scene.switch("titleScene");
+      this.scene.switch("titleScene")
     }
   }
 }
 
-export default SplashScene;
-3;
+export default SplashScene
