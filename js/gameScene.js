@@ -168,7 +168,9 @@ class GameScene extends Phaser.Scene {
     }
     this.ghostGroup.children.each(function(respawn) {
       if (respawn.y > 1200) {
-        respawn.y = -100;
+        respawn.y = -100
+        this.createGhost()
+        this.createGhost()
       }
 
       if (respawn.x > 1920) {
