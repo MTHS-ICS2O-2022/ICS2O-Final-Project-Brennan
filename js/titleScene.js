@@ -14,15 +14,15 @@ class TitleScene extends Phaser.Scene {
    * This is the construtor.
    */
   constructor() {
-    super({ key: "titleScene" });
+    super({ key: "titleScene" })
 
-    this.titleSceneBackgroundImage = null;
-    this.titleSceneText = null;
+    this.titleSceneBackgroundImage = null
+    this.titleSceneText = null
     this.titleSceneTextStlye = {
       font: "200px Times",
       fill: "#fde4b9",
       align: "center",
-    };
+    }
   }
 
   /**
@@ -32,7 +32,7 @@ class TitleScene extends Phaser.Scene {
    * @param {object} data - any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
   init(data) {
-    this.cameras.main.setBackgroundColor("FFFFFF");
+    this.cameras.main.setBackgroundColor("FFFFFF")
   }
 
   /**
@@ -40,8 +40,8 @@ class TitleScene extends Phaser.Scene {
    * use it to load assets.
    */
   preload() {
-    console.log("Tittle Scene");
-    this.load.image("titleSceneBackground", "/.assets/pacman.png");
+    console.log("Tittle Scene")
+    this.load.image("titleSceneBackground", "./assets/pacman.png")
   }
 
   /**
@@ -52,13 +52,13 @@ class TitleScene extends Phaser.Scene {
   create(data) {
     this.titleSceneBackgroundImage = this.add
       .sprite(0, 0, "titleSceneBackground")
-      .setScale(2.75);
-    this.titleSceneBackgroundImage.x = 1920 / 2;
-    this.titleSceneBackgroundImage.y = 1580 / 2;
+      .setScale(2.75)
+    this.titleSceneBackgroundImage.x = 1920 / 2
+    this.titleSceneBackgroundImage.y = 1580 / 2
 
     this.titleSceneText = this.add
       .text(1920 / 2, 1080 / 2 + 350, "pac man", this.titleSceneTextStlye)
-      .setOrigin(0.5);
+      .setOrigin(0.5)
   }
 
   /**
@@ -69,8 +69,8 @@ class TitleScene extends Phaser.Scene {
    */
   update(time, delta) {
     if (time > 6000) {
-      this.scene.switch("menuScene");
+      this.scene.switch("menuScene")
     }
   }
 }
-export default TitleScene;
+export default TitleScene

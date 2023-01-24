@@ -14,10 +14,10 @@ class MenuScene extends Phaser.Scene {
    * This method is the construtor.
    */
   constructor() {
-    super({ key: "menuScene" });
+    super({ key: "menuScene" })
 
-    this.menuSceneBackgroundImage = null;
-    this.startButton = null;
+    this.menuSceneBackgroundImage = null
+    this.startButton = null
   }
 
   /**
@@ -27,7 +27,7 @@ class MenuScene extends Phaser.Scene {
    *  @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
   init(data) {
-    this.cameras.main.setBackgroundColor("ffffff");
+    this.cameras.main.setBackgroundColor("ffffff")
   }
 
   /**
@@ -35,12 +35,11 @@ class MenuScene extends Phaser.Scene {
    * use it to load assets.
    */
   preload() {
-    console.log("Menu Scene");
+    console.log("Menu Scene")
     this.load.image(
-      "menuSceneBackground",
-      "./assets/decimos-partida-perfecta-pac-man (3).jpg"
-    );
-    this.load.image("startButton", "./assets/Start-Button-Vector-PNG.png");
+      "menuSceneBackground", "./assets/decimos-partida-perfecta-pac-man (3).jpg"
+    )
+    this.load.image("startButton", "./assets/Start-Button-Vector-PNG.png")
   }
 
   /**
