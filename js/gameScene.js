@@ -76,7 +76,10 @@ class GameScene extends Phaser.Scene {
     this.background = this.add.image(0, 0, "binary").setScale(3.8);
     this.background.setOrigin(0, 0);
 
-    this.scoreText = this.add.text(10, 10, "Score: " + this.score.toString(),
+    this.scoreText = this.add.text(
+      10,
+      10,
+      "Score: " + this.score.toString(),
       this.scoreTextStyle
     );
 
