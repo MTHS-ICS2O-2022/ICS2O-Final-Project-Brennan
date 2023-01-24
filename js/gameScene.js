@@ -166,6 +166,15 @@ class GameScene extends Phaser.Scene {
         this.ship.y = 0;
       }
     }
+    this.ghostGroup.children.each(function(respawn) {
+      if (respawn.y > 1200) {
+        respawn.y = -100;
+      }
+
+      if (respawn.x > 1920) {
+        respawn.x = -100;
+      }
+    })
   }
 }
 
