@@ -172,7 +172,8 @@ class GameScene extends Phaser.Scene {
       }
 
       if (respawn.x > 1920) {
-        respawn.x = -100;
+        respawn.x = -100
+        this.createGhost()
       }
     })
   }
