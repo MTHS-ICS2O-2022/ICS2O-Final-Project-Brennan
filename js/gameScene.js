@@ -69,7 +69,7 @@ class GameScene extends Phaser.Scene {
     this.load.image("dot", "./assets/dots.png");
     // sound
     this.load.audio("eat", "./assets/pacman_chomp.wav");
-    this.load.audio("death", "./assets/pacmandeath.wav");
+    this.load.audio("death", "./assets/death.wav");
   }
 
   create(data) {
