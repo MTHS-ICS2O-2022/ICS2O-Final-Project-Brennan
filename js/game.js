@@ -7,6 +7,7 @@
 // This is the phaser3 game configuration file
 
 // scene import statements
+
 import SplashScene from "./splashScene.js";
 import TitleScene from "./titleScene.js";
 import MenuScene from "./menuScene.js";
@@ -28,7 +29,7 @@ const config = {
   physics: {
     default: "arcade",
     arcade: {
-      debug: true,
+      debug: false,
     },
   },
   //set background color
@@ -51,4 +52,5 @@ game.scene.add("menuScene", menuScene);
 game.scene.add("gameScene", gameScene);
 
 // the start scene
+
 game.scene.start("splashScene");
